@@ -1,27 +1,27 @@
-# SHINER Community Downloads
+# SHINER Application Distributions
 
-This repository is the public distribution channel for SHINER Community.
+Public downloads for the SHINER application.
 
-Downloadable SHINER application packages are published through GitHub Releases rather than stored directly in Git history.
+## Choose your platform
 
-## Current platforms
+### Ubuntu 26.04 x86_64
 
-- Ubuntu 26.04
-- Debian 13 (amd64)
-- macOS — planned
+**SHINER 0.9.6a8 — Ubuntu 26.04 x86_64**
 
-## Downloading SHINER
+[Open the Ubuntu distribution repository](https://github.com/shinerson/SHINER-Ubuntu-0.9.6a8-26.04-x86_64)
 
-Use the Releases section of this repository to download the package for your platform.
+[Download the Ubuntu release](https://github.com/shinerson/SHINER-Ubuntu-0.9.6a8-26.04-x86_64/releases/tag/v0.9.6a8)
 
-Each release includes a SHA-256 checksum file for the corresponding application package.
+### Debian 13 amd64
 
-## Source code
+**SHINER 0.9.6a8 — Debian 13 amd64**
 
-Distribution availability and source-code visibility are managed independently. A downloadable SHINER release does not imply that the current development source repository is publicly available.
+[Open the Debian distribution repository](https://github.com/shinerson/SHINER-Debian-0.9.6a8-13-amd64)
 
-## Project
+[Download the Debian release](https://github.com/shinerson/SHINER-Debian-0.9.6a8-13-amd64/releases/tag/v0.9.6a8)
 
-SHINER is a workspace-oriented engineering platform for MiniBadge projects.
+## About
 
-Application version: 0.9.6a8
+Each supported SHINER distribution has its own public repository and release
+area. This repository is the public distribution hub for finding the
+appropriate SHINER package for your platform.

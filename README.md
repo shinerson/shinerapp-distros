@@ -24,6 +24,11 @@ through Ubuntu's normal apt/dpkg package system.
 
 ## About
 
-Each supported SHINER distribution has its own public repository and release
-area. This repository is the public distribution hub for finding the
-appropriate SHINER package for your platform.
+`shinerapp-distros` is the authoritative public distribution repository for
+SHINER.
+
+Current native packages for supported platforms are published as release assets
+in this repository. Older releases remain available as historical versions.
+
+Platform-specific repositories from earlier SHINER distribution models are
+retired and are not authoritative sources for current downloads.

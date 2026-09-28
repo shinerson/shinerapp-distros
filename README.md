@@ -8,11 +8,12 @@ Public downloads for the SHINER application.
 
 **SHINER 0.9.7a1 — Ubuntu 26.04 x86_64**
 
-Download the native Ubuntu package from the current `v0.9.7a1` release in this
-repository.
+[**Download SHINER 0.9.7a1 for Ubuntu 26.04 (.deb)**](https://github.com/shinerson/shinerapp-distros/releases/download/v0.9.7a1/SHINER-0.9.7a1-Ubuntu-26.04-x86_64.deb)
 
-The package installs Moonshiner as a native Ubuntu application and is managed
-through Ubuntu's normal apt/dpkg package system.
+[SHA-256 checksum](https://github.com/shinerson/shinerapp-distros/releases/download/v0.9.7a1/SHINER-0.9.7a1-Ubuntu-26.04-x86_64.deb.sha256)
+
+Native Ubuntu package. Installs Moonshiner as an Ubuntu application and is
+managed through Ubuntu's normal apt/dpkg package system.
 
 ### Debian 13 amd64
 

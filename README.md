@@ -17,11 +17,14 @@ managed through Ubuntu's normal apt/dpkg package system.
 
 ### Debian 13 amd64
 
-**SHINER 0.9.6a8 — Debian 13 amd64**
+**SHINER 0.9.7a1 — Debian 13 amd64**
 
-[Open the Debian distribution repository](https://github.com/shinerson/SHINER-Debian-0.9.6a8-13-amd64)
+[**Download SHINER 0.9.7a1 for Debian 13 (.deb)**](https://github.com/shinerson/shinerapp-distros/releases/download/v0.9.7a1/SHINER-0.9.7a1-Debian-13-amd64.deb)
 
-[Download the Debian release](https://github.com/shinerson/SHINER-Debian-0.9.6a8-13-amd64/releases/tag/v0.9.6a8)
+[SHA-256 checksum](https://github.com/shinerson/shinerapp-distros/releases/download/v0.9.7a1/SHINER-0.9.7a1-Debian-13-amd64.deb.sha256)
+
+Native Debian package. Installs Moonshiner as a Debian application and is
+managed through Debian's normal apt/dpkg package system.
 
 ## About
 

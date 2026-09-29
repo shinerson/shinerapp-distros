@@ -26,6 +26,17 @@ managed through Ubuntu's normal apt/dpkg package system.
 Native Debian package. Installs Moonshiner as a Debian application and is
 managed through Debian's normal apt/dpkg package system.
 
+
+## Fedora 42 x86_64
+
+**SHINER 0.9.7a1 — Fedora 42 x86_64**
+
+[Download SHINER 0.9.7a1 for Fedora 42 (.rpm)](https://github.com/shinerson/shinerapp-distros/releases/download/v0.9.7a1/SHINER-0.9.7a1-Fedora-42-x86_64.rpm)
+
+[SHA-256 checksum](https://github.com/shinerson/shinerapp-distros/releases/download/v0.9.7a1/SHINER-0.9.7a1-Fedora-42-x86_64.rpm.sha256)
+
+Native Fedora package. Installs Moonshiner as a Fedora application and is managed through Fedora's normal dnf/rpm package system.
+
 ## About
 
 `shinerapp-distros` is the authoritative public distribution repository for

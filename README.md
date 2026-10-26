@@ -7,35 +7,40 @@ Current public release: **SHINER 0.9.7a2 (ALPHA)**.
 These packages passed automated packaging and content verification. Native
 recipient installation, upgrade and uninstall UAT remains pending.
 
-## UAT prerelease — 0.9.7a2 packaging revision 2~rc1
+## Current UAT candidate — 0.9.7a2 packaging revision 2~rc2
 
-**For recipient UAT; native installation, startup, upgrade, removal, and user-data
-preservation remain unvalidated on all three targets.** The public release above
-and its installation instructions remain available unchanged.
+**RC2 is the current UAT candidate. Native recipient installation, startup,
+upgrade, removal, and user-data preservation UAT remains pending on all targets.**
 
-[UAT prerelease v0.9.7a2-pkg2rc1](https://github.com/shinerson/shinerapp-distros/releases/tag/v0.9.7a2-pkg2rc1)
-contains these separate candidates:
+[UAT prerelease v0.9.7a2-pkg2rc2](https://github.com/shinerson/shinerapp-distros/releases/tag/v0.9.7a2-pkg2rc2) contains:
 
 | Target | Candidate | Checksum |
 | --- | --- | --- |
-| Ubuntu 26.04 x86_64 | [Download](https://github.com/shinerson/shinerapp-distros/releases/download/v0.9.7a2-pkg2rc1/SHINER-0.9.7a2-pkg2rc1-Ubuntu-26.04-x86_64.deb) | [SHA-256](https://github.com/shinerson/shinerapp-distros/releases/download/v0.9.7a2-pkg2rc1/SHINER-0.9.7a2-pkg2rc1-Ubuntu-26.04-x86_64.deb.sha256) |
-| Debian 13 amd64 | [Download](https://github.com/shinerson/shinerapp-distros/releases/download/v0.9.7a2-pkg2rc1/SHINER-0.9.7a2-pkg2rc1-Debian-13-amd64.deb) | [SHA-256](https://github.com/shinerson/shinerapp-distros/releases/download/v0.9.7a2-pkg2rc1/SHINER-0.9.7a2-pkg2rc1-Debian-13-amd64.deb.sha256) |
-| Fedora 42 x86_64 | [Download](https://github.com/shinerson/shinerapp-distros/releases/download/v0.9.7a2-pkg2rc1/SHINER-0.9.7a2-pkg2rc1-Fedora-42-x86_64.rpm) | [SHA-256](https://github.com/shinerson/shinerapp-distros/releases/download/v0.9.7a2-pkg2rc1/SHINER-0.9.7a2-pkg2rc1-Fedora-42-x86_64.rpm.sha256) |
+| Ubuntu 26.04 LTS x86_64 | [Download](https://github.com/shinerson/shinerapp-distros/releases/download/v0.9.7a2-pkg2rc2/SHINER-0.9.7a2-pkg2rc2-Ubuntu-26.04-x86_64.deb) | [SHA-256](https://github.com/shinerson/shinerapp-distros/releases/download/v0.9.7a2-pkg2rc2/SHINER-0.9.7a2-pkg2rc2-Ubuntu-26.04-x86_64.deb.sha256) |
+| Debian 13 amd64 | [Download](https://github.com/shinerson/shinerapp-distros/releases/download/v0.9.7a2-pkg2rc2/SHINER-0.9.7a2-pkg2rc2-Debian-13-amd64.deb) | [SHA-256](https://github.com/shinerson/shinerapp-distros/releases/download/v0.9.7a2-pkg2rc2/SHINER-0.9.7a2-pkg2rc2-Debian-13-amd64.deb.sha256) |
+| Fedora 42 x86_64 | [Download](https://github.com/shinerson/shinerapp-distros/releases/download/v0.9.7a2-pkg2rc2/SHINER-0.9.7a2-pkg2rc2-Fedora-42-x86_64.rpm) | [SHA-256](https://github.com/shinerson/shinerapp-distros/releases/download/v0.9.7a2-pkg2rc2/SHINER-0.9.7a2-pkg2rc2-Fedora-42-x86_64.rpm.sha256) |
 
-Download the matching package and sidecar, then run `sha256sum -c <package>.sha256`
-in their download directory before testing. Use the candidate filename with the
-applicable package-manager procedure below. Ubuntu requires Python 3.14;
-Debian and Fedora require Python 3.13. Native Python 3.13 execution is pending.
+Application source: `2c27f871a20a06bc40acbc953d4512e8e464d5ad`.
+[Source Quality Gate #231 passed](https://github.com/shinerson/shiner-engineering-manager/actions/runs/40277826795).
 
-Application source: `0eb6e81d0db2763ed82dbe2481a3ea97dcc59a2d`.
-The candidate builders and tests exactly match packaging synchronization commit
-`9b525020710c66b8d21197811880b4648305a101`.
-[Quality Gate #228 passed](https://github.com/shinerson/shiner-engineering-manager/actions/runs/40154289390).
-Existing binaries were preserved: package metadata, source/resource comparisons,
-RECORD integrity, checksums, and extracted-payload checks passed. The earlier
-local full suite recorded 5955 passed and four path-sensitive terminal-test
-failures; the later synchronized GitHub Quality Gate passed. Neither result
-establishes native lifecycle UAT success.
+RC2 includes the accepted Help/Platform Doctor menu mouse-restoration correction
+(UI-MOUSE-01), safe non-graphical KiCad detection and bounded diagnostic probes
+(DOCTOR-KICAD-01), and current application documentation. Application version
+remains **0.9.7a2**. Ubuntu requires Python 3.14; Debian/Fedora require Python 3.13.
+
+All three packages passed automated metadata, dependency, inventory, source/resource,
+RECORD, checksum, desktop integration, and extracted-payload checks. Packaging,
+mouse/Doctor, learning, and offline Help regressions passed. Extracted runtime
+checks used host Python 3.14; native Debian/Fedora Python 3.13 execution remains
+pending. See the [RC2 notes](release-notes/v0.9.7a2-pkg2rc2.md) for scope and UAT items.
+
+Download the matching package and `.sha256` sidecar, then require
+`sha256sum -c <package>.sha256` to report `OK` before testing. Substitute the RC2
+filename in the applicable package-manager procedure below.
+
+The public `v0.9.7a2` release and its installation instructions remain unchanged.
+RC1 is retained during this publication for possible upgrade comparisons; any
+retirement is a separate follow-up.
 
 ## Choose your platform
 

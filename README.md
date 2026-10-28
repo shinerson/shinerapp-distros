@@ -7,7 +7,7 @@ Current public release: **SHINER 0.9.7a2 (ALPHA)**.
 These packages passed automated packaging and content verification. Native
 recipient installation, upgrade and uninstall UAT remains pending.
 
-## Current UAT candidate — 0.9.7a2 packaging revision 2~rc2
+## Current UAT candidate — 0.9.7a2 (Linux 2~rc2 and macOS ARM64)
 
 **RC2 is the current UAT candidate. Native recipient installation, startup,
 upgrade, removal, and user-data preservation UAT remains pending on all targets.**
@@ -19,8 +19,9 @@ upgrade, removal, and user-data preservation UAT remains pending on all targets.
 | Ubuntu 26.04 LTS x86_64 | [Download](https://github.com/shinerson/shinerapp-distros/releases/download/v0.9.7a2-pkg2rc2/SHINER-0.9.7a2-pkg2rc2-Ubuntu-26.04-x86_64.deb) | [SHA-256](https://github.com/shinerson/shinerapp-distros/releases/download/v0.9.7a2-pkg2rc2/SHINER-0.9.7a2-pkg2rc2-Ubuntu-26.04-x86_64.deb.sha256) |
 | Debian 13 amd64 | [Download](https://github.com/shinerson/shinerapp-distros/releases/download/v0.9.7a2-pkg2rc2/SHINER-0.9.7a2-pkg2rc2-Debian-13-amd64.deb) | [SHA-256](https://github.com/shinerson/shinerapp-distros/releases/download/v0.9.7a2-pkg2rc2/SHINER-0.9.7a2-pkg2rc2-Debian-13-amd64.deb.sha256) |
 | Fedora 42 x86_64 | [Download](https://github.com/shinerson/shinerapp-distros/releases/download/v0.9.7a2-pkg2rc2/SHINER-0.9.7a2-pkg2rc2-Fedora-42-x86_64.rpm) | [SHA-256](https://github.com/shinerson/shinerapp-distros/releases/download/v0.9.7a2-pkg2rc2/SHINER-0.9.7a2-pkg2rc2-Fedora-42-x86_64.rpm.sha256) |
+| macOS 15 Apple Silicon ARM64 | [Download DMG](https://github.com/shinerson/shinerapp-distros/releases/download/v0.9.7a2-pkg2rc2/MoonSHINER-0.9.7a2-macOS-arm64-50ea41c215d0.dmg) | [SHA-256](https://github.com/shinerson/shinerapp-distros/releases/download/v0.9.7a2-pkg2rc2/MoonSHINER-0.9.7a2-macOS-arm64-50ea41c215d0.dmg.sha256) |
 
-Application source: `2c27f871a20a06bc40acbc953d4512e8e464d5ad`.
+Linux application source: `2c27f871a20a06bc40acbc953d4512e8e464d5ad`.
 [Source Quality Gate #231 passed](https://github.com/shinerson/shiner-engineering-manager/actions/runs/40277826795).
 
 RC2 includes the accepted Help/Platform Doctor menu mouse-restoration correction
@@ -41,6 +42,86 @@ filename in the applicable package-manager procedure below.
 The public `v0.9.7a2` release and its installation instructions remain unchanged.
 RC1 is retained during this publication for possible upgrade comparisons; any
 retirement is a separate follow-up.
+
+### macOS Apple Silicon ARM64 — UAT candidate
+
+**Native macOS UAT status: PENDING.** The project owner must perform physical
+Apple Silicon Mac installation and application Acceptance Testing. Automated
+checks do not establish successful native human UAT.
+
+- [Download MoonSHINER ARM64 DMG](https://github.com/shinerson/shinerapp-distros/releases/download/v0.9.7a2-pkg2rc2/MoonSHINER-0.9.7a2-macOS-arm64-50ea41c215d0.dmg)
+- [Download matching SHA-256 file](https://github.com/shinerson/shinerapp-distros/releases/download/v0.9.7a2-pkg2rc2/MoonSHINER-0.9.7a2-macOS-arm64-50ea41c215d0.dmg.sha256)
+- Exact macOS application source commit:
+  [`50ea41c215d0d6c5332bc81b25b19a8d8fe98d30`](https://github.com/shinerson/shiner-engineering-manager/commit/50ea41c215d0d6c5332bc81b25b19a8d8fe98d30).
+- Provenance: [macOS ARM64 UAT Candidate #4, run 40622127848](https://github.com/shinerson/shiner-engineering-manager/actions/runs/40622127848),
+  with its [successful exact-commit Quality Gate](https://github.com/shinerson/shiner-engineering-manager/actions/runs/40622127894).
+  The approved Actions DMG is published unchanged; it has not been rebuilt.
+- Application version: **0.9.7a2**. This macOS asset is identified by its source
+  commit; the **2~rc2 packaging revision applies to the existing Linux packages**.
+- Initial target: **macOS 15, Apple Silicon ARM64**; built and checked on macOS
+  15.7.9. Intel Macs and other macOS versions have not been validated.
+  Python 3.12.10 and required runtime dependencies are bundled. Python, Xcode,
+  Git and development tools are not required to start SHINER. KiCad and other
+  optional engineering tools remain separate installations.
+
+**Verify the download**
+
+Save the DMG and its `.dmg.sha256` file together. In Terminal, change to that
+folder and run:
+
+```sh
+shasum -a 256 -c MoonSHINER-0.9.7a2-macOS-arm64-50ea41c215d0.dmg.sha256
+```
+
+Require `OK`. Expected DMG SHA-256:
+
+```text
+1ec1cb471337db880777ff0ae92c3f62e6d92d41705b84f0d8df0669bde3be8b
+```
+
+**Install and start**
+
+1. Open the verified DMG in Finder and drag `MoonSHINER.app` to Applications.
+   A normal-user `~/Applications` folder is also suitable.
+2. Eject the disk image and open the copied application as your normal user.
+   It opens Apple's Terminal for interactive keyboard and mouse operation.
+3. Enlarge Terminal to at least **140 columns by 35 rows**. Follow first-run
+   setup, then use **[0] Exit** to quit. A completed Terminal window may remain
+   open according to its profile; close that window yourself.
+
+Projects remain outside the app bundle. The default first-run project location
+is `~/Documents/shinerapp_projects`; other accessible folders and OS-mounted
+storage remain supported. The canonical icon, Guided Tutorial and appendices,
+Mentorials, offline HTML Help, Markdown export and example project are included.
+
+**Unsigned application and Gatekeeper**
+
+This candidate has local ad-hoc signatures only: **no Apple Developer ID signing
+or notarization**. Gatekeeper may block its first launch.
+
+After verifying the checksum and choosing to trust the candidate, try opening
+the copied app. If blocked as an unidentified-developer or unnotarized app, open
+**System Settings > Privacy & Security** and select **Open Anyway** for this app.
+Confirm **Open** and authenticate if asked. This is a per-app exception. See
+[Apple's supported procedure](https://support.apple.com/en-us/102445).
+
+Keep Gatekeeper enabled and retain quarantine attributes; do not change global
+security policy. If managed policy hides the exception, or macOS reports malware,
+revocation, damage or tampering, stop and report the message.
+
+**Remove and test**
+
+Exit SHINER, close its completed Terminal window, and move only the copied
+`MoonSHINER.app` to Trash. Keep external project folders, settings, logs and
+exports. Removing the downloaded DMG is separate from removing the installed app.
+No global Python installation or background service is added.
+
+Native UAT remains **PENDING**: check Finder installation and startup, unsigned
+app prompts, keyboard and mouse behavior, resizing, offline books/images,
+Markdown export, a disposable example project, normal exit/Ctrl-C, removal and
+user-data preservation. Terminal's **View > Allow Mouse Reporting** must permit
+reporting for mouse tests. The app retains its existing mouse-policy negotiation.
+[Detailed source-version UAT checklist](https://github.com/shinerson/shiner-engineering-manager/blob/50ea41c215d0d6c5332bc81b25b19a8d8fe98d30/docs/MACOS_ARM64.md).
 
 ## Choose your platform
 
